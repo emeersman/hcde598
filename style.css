@@ -102,6 +102,15 @@ a, p {
   justify-content: center;
 }
 
+.assignment-content h2 {
+  color: #fff;
+  padding-left: 20px;
+}
+
+.assignment-content p {
+  padding: 0 40px;
+}
+
 .assignment-content img {
   border: 5px solid #B452CD;
   margin: 0 auto;
