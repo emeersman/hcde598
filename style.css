@@ -14,7 +14,7 @@ h1,h2,h3,h4 {
   font-family: 'helvetica', 'arial', 'sans';
 }
 
-a, p {
+a, p, figcaption {
   color: #fff;
 }
 
@@ -111,9 +111,15 @@ a, p {
   padding: 0 40px;
 }
 
-.assignment-content img {
+.assignment-content img,
+.assignment-content iframe {
   border: 5px solid #B452CD;
   margin: 0 auto;
+  width: 400px;
+}
+
+.assignment-content p a img {
+  width: 100px;
 }
 
 .footer {
