@@ -32,6 +32,7 @@ a, p, figcaption {
   background-image: url("triangles.jpg");
   background-size: cover;
   height: 250px;
+  min-width: 340px;
 }
 
 .header h1 {
