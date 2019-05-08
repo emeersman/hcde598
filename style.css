@@ -108,6 +108,11 @@ a, p, figcaption {
   padding-left: 20px;
 }
 
+.assignment-content h3 {
+  color: #fff;
+  margin: 0 auto;
+}
+
 .assignment-content p {
   padding: 0 40px;
 }
