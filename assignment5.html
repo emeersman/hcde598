@@ -49,6 +49,7 @@
             	I spent quite a bit of time drawing the curves so that they would line up with one another from face to face. The result was a wave pattern across the cube. This involved patterning an extruded circle along the curves of each face. 
             </p>
             <img src="a5/final_face.png" width=400></img>
+            <br/>
             <img src="a5/assembly.png" width=400></img>
             <p>
             	Finally, I took inspiration from some of the Pinterest posts and quickly created another face with a hole in the bottom to accommodate a light fixture. I wanted to give myself the option of turning this into a lamp. It might have been several assignments too late, but you can never have too many gorgeous, digitally fabricated lights!
@@ -59,19 +60,19 @@
             </p>
             <h2>The Fabrication Part</h2>
             <p>
-            	This was where my commitment to simplicity paid off. I purchased an 8.4mm diameter wooden dowel from Blick art supplies and ended up using 7.5 inches of it. Printing the parts was quite painless and my dowel fit correctly on the first try. I didn't like the look of the base with the branches and decided to make the base half of the initial height. I wanted to style the base to look more like tree roots but I wasn't able to figure out how to loft along a curve. 
+            	Due to challenges with installing KiCad on my work computer, I chose to clean up my OnShape DXF files in Illustrator and turn them into SVGs. In Illustrator, I joined all external paths for the face of my box. I also used the Pathfinder -> Exclude setting as recommended by @JoshuaV. I then imported those SVGs into the BantamTools program. This was where I faced some challenges.
             </p>
-            <img src="a5/prototype.jpg" width=400></img>
-            <br/>
-            <img src="a5/prototype2.jpg" width=400></img>
-            <br/>
-            <img src="a5/tree_base2.png" width=400></img>
+            <img src="a5/bantam.jpg" width=400></img>
             <p>
-            	The top of the tree was fairly loose on the dowel. I wanted it to be removable but more of a press fit in order to secure the branches. I ended up re-printing both parts but the first versions were perfectly usable.
+                Despite being present in the SVG file, the holes I had planned to cut into the face of my FR1 did not show up in the Bantam software. To troubleshoot, I went back to Illustrator to ensure everything was a path and all paths had been exported in the SVG file. Once I confirmed that something was breaking in the process of opening the SVG in the Bantam software, I started experimenting with those settings. The dimensions of my FR1 were 70x100x1.56mm and I added .02mm to account for the double sided tape. I set my toolpath to be on the outside of the material because that was how I had designed my part. Though I had tried to design the part for a minimum end mill diameter of .125 inches, some of the corners were still too tight for the mill to reach.
             </p>
-            <img src="a5/printer.jpg" width=400></img>
+            <img src="a5/bantam_settings.jpg" width=400></img>
             <p>
-            	I didn't know how to export all of the branches at once but was able to export each as an individual DXF file. I needed to go through some extraneous file transfers to get all of the parts into one SVG file for cutting. I used 6mm plywood at 100 power, 10 speed. I tested a few branches to ensure they would fit the dowel. There were no issues with the fit so I cut all the branches on the stained plywood. I combined these with the reprinted 3D parts to assemble my finished tree. 
+                In the interest of time, I decided to cut one experimental piece with less precise corners and no holes on the face of the part. I connected my computer to the CNC mill and started cutting.
+            </p>
+            <img src="a5/cutting.png" width=400></img>
+            <p>
+            	This worked out fairly well and I wanted to have a completed project. I decided to cut out the other sides of my box and fit everything together. After some press fitting and a bit of glue, I had a box with some gorgeous finger joints.
             </p>
             <img src="a5/laser1.jpg" width=400></img>
             <br/>
