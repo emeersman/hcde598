@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Emma's HCDE 598 Digital Fabrication Page!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <div class="title-wrap">
+                <h1>CNC Milled Box</h1>
+            </div>
+        </div>
+        <div class="assignment-content">
+            <h2>Problem Statement</h2>
+            <p>
+                In this assignment, we had to learn CNC milling skills to create a box out of FR1. The assignment prompt was:
+            </p>
+            <p>
+                <i>Design a box with e.g. fingerjoints, tabs, or another joining method that can be milled out of FR1 on the Othermill. As needed, you may use dogbones or other milling aids. Use <a href="https://resources.bantamtools.com/software-download?_ga=2.107767810.1488339284.1556313354-1856676828.1556313354">Bantam Tools' software</a>.Links to an external site. to generate your g-code. Document your toolpathing method.  Mill the box and assemble it.</i>
+            </p>
+            <h2>Brainstorming</h2>
+            <p>
+                I didn't have a lot of time this week so I approached this assignment with the goal of making something fairly simple that looked interesting. I've always had difficulty performing the particular bit of 3D mind visualization wizardry for joints. I get particularly stumped by how multiple parts can intersect with one another in several dimensions. The link provided in the problem description was quite helpful in giving concrete examples for different types of joints. I really liked the look of the finger joints and thought it would be nice to use the same edge for all of my parts. I found a few images that I liked online and added more content to my <a href="https://www.pinterest.com/meersmakat/598-maker-inspiration/">Pinterest board</a> for this class.
+            </p>
+             <p>
+                I ended up picking a minimalist joint pattern that would show a few fingers on each side. My original intention was to make a simple box with this pattern on the sides and bottom and an easy press fit top. The brainstorming to get to this point is shown below:
+            </p>
+            <img src="a5/brainstorming.png" width=400></img>
+            <h2>The Digital Part</h2>
+            <p>
+            	Starting out in OnShape, I made a simple square piece extruded to 1.56mm thickness (the size of my FR1). I had planned my finger joint pattern in advance and was able to calculate the total number of fingers I would need for each side. I then divided the length of the side by the number of fingers to get the width for each finger of the joint. 
+            </p>
+            <img src="a5/dimensions.png" width=400></img>
+            <br/>
+            <p>
+                Once I had properly dimensioned and extruded the fingers on one side, I rotated the extruded side around the piece so that all sides would be the same. I had to do some additional sketching to ensure that all of the sides would line up properly when combined into a final box. I figured out that I would need to take more material off the bottom of the sides so that all of the pieces would fit together. Due to the constraints of the round drill, I ended up with one more finger per side than I wanted. I decided to embrace this as a feature instead of trying something fancy with dogbones, mostly for the sake of consistency within the design.
+            </p>
+            <p>
+                At this point, I had a bit of extra time and wanted to make the piece slightly fancier. I knew the constraints of the CNC mill and decided to make a pattern across the face of all sides of the cube. Browsing through Pinterest showed me a lot of past projects where people would make cube night lights with each face displaying characters from popular TV shows. I wanted something a bit more abstract and elegant so I decided on a curved dot pattern across each face.
+            </p>
+            <img src="a5/curves.png" width=400></img>
+            <p>
+            	I spent quite a bit of time drawing the curves so that they would line up with one another from face to face. The result was a wave pattern across the cube. This involved patterning an extruded circle along the curves of each face. 
+            </p>
+            <img src="a5/final_face.png" width=400></img>
+            <img src="a5/assembly.png" width=400></img>
+            <p>
+            	Finally, I took inspiration from some of the Pinterest posts and quickly created another face with a hole in the bottom to accommodate a light fixture. I wanted to give myself the option of turning this into a lamp. It might have been several assignments too late, but you can never have too many gorgeous, digitally fabricated lights!
+            </p>
+            <img src="a5/bottom.png" width=400></img>
+            <p>
+                Here is the <a href="https://cad.onshape.com/documents/a6c80094e0732ef4430dfaaf/w/88092d4fc5f569334df309c8/e/d4d66812191293cbc16539e9">link to the OnShape file</a> for the project.
+            </p>
+            <h2>The Fabrication Part</h2>
+            <p>
+            	This was where my commitment to simplicity paid off. I purchased an 8.4mm diameter wooden dowel from Blick art supplies and ended up using 7.5 inches of it. Printing the parts was quite painless and my dowel fit correctly on the first try. I didn't like the look of the base with the branches and decided to make the base half of the initial height. I wanted to style the base to look more like tree roots but I wasn't able to figure out how to loft along a curve. 
+            </p>
+            <img src="a5/prototype.jpg" width=400></img>
+            <br/>
+            <img src="a5/prototype2.jpg" width=400></img>
+            <br/>
+            <img src="a5/tree_base2.png" width=400></img>
+            <p>
+            	The top of the tree was fairly loose on the dowel. I wanted it to be removable but more of a press fit in order to secure the branches. I ended up re-printing both parts but the first versions were perfectly usable.
+            </p>
+            <img src="a5/printer.jpg" width=400></img>
+            <p>
+            	I didn't know how to export all of the branches at once but was able to export each as an individual DXF file. I needed to go through some extraneous file transfers to get all of the parts into one SVG file for cutting. I used 6mm plywood at 100 power, 10 speed. I tested a few branches to ensure they would fit the dowel. There were no issues with the fit so I cut all the branches on the stained plywood. I combined these with the reprinted 3D parts to assemble my finished tree. 
+            </p>
+            <img src="a5/laser1.jpg" width=400></img>
+            <br/>
+            <img src="a5/laser2.jpg" width=400></img>
+            <br/>
+            <img src="a5/spine.jpg" width=400></img>
+            <br/>
+            <img src="a5/swirl.jpg" width=400></img>
+            <br/>
+            <img src="a5/flat.jpg" width=400></img>
+            <br/>
+            <img src="a5/final.jpg" width=400></img>
+            <h2>Future Work</h2>
+            <p>
+                When researching for this project, I found so many intersting joint designs. I was particularly drawn to joints with contrasting colors of wood and designs involving thicker materials. When not constrained by time or material, I would like to explore more styles of joints. 
+            </p>
+            <img src="a5/more_joints.png" width=400></img>
+        </div>
+    </body>
+</html>
