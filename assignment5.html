@@ -62,27 +62,27 @@
             <p>
             	Due to challenges with installing KiCad on my work computer, I chose to clean up my OnShape DXF files in Illustrator and turn them into SVGs. In Illustrator, I joined all external paths for the face of my box. I also used the Pathfinder -> Exclude setting as recommended by @JoshuaV. I then imported those SVGs into the BantamTools program. This was where I faced some challenges.
             </p>
-            <img src="a5/bantam.jpg" width=400></img>
+            <img src="a5/bantam.png" width=400></img>
             <p>
-                Despite being present in the SVG file, the holes I had planned to cut into the face of my FR1 did not show up in the Bantam software. To troubleshoot, I went back to Illustrator to ensure everything was a path and all paths had been exported in the SVG file. Once I confirmed that something was breaking in the process of opening the SVG in the Bantam software, I started experimenting with those settings. The dimensions of my FR1 were 70x100x1.56mm and I added .02mm to account for the double sided tape. I set my toolpath to be on the outside of the material because that was how I had designed my part. Though I had tried to design the part for a minimum end mill diameter of .125 inches, some of the corners were still too tight for the mill to reach.
+                Despite being present in the SVG file, the holes I had planned to cut into the face of my FR1 did not show up in the Bantam software. To troubleshoot, I went back to Illustrator to ensure everything was a path and all paths had been exported in the SVG file. After a very long time, I realized that a few external lines had not been joined to the outside of the shape. I went back and fixed all the connections and finally got the holes to show up in the Bantam software. Initially, the software wanted to cut everything besides the holes. I got the correct configuration by inverting the cutout. However, the time to print would have been over 2 hours. 
             </p>
-            <img src="a5/bantam_settings.jpg" width=400></img>
+            <img src="a5/more_bantam.png" width=400></img>
             <p>
-                In the interest of time, I decided to cut one experimental piece with less precise corners and no holes on the face of the part. I connected my computer to the CNC mill and started cutting.
+                 I decided to print the box sides without the engraving. The dimensions of my FR1 were 70x100x1.58mm and I added .02mm to account for the double sided tape. I elevated the material 1.58mm above the bed of the CNC mill. I set my toolpath to be in the center of the material because that was how I had designed my part. I used a 1/32in flat end mill. Thanks to Christa Keiser for helping me set up the mill!
             </p>
-            <img src="a5/cutting.png" width=400></img>
+            <img src="a5/bantam_settings.png" width=400></img>
             <p>
-            	This worked out fairly well and I wanted to have a completed project. I decided to cut out the other sides of my box and fit everything together. After some press fitting and a bit of glue, I had a box with some gorgeous finger joints.
+                I connected my computer to the CNC mill and started cutting.
             </p>
-            <img src="a5/laser1.jpg" width=400></img>
-            <br/>
-            <img src="a5/laser2.jpg" width=400></img>
-            <br/>
-            <img src="a5/spine.jpg" width=400></img>
-            <br/>
-            <img src="a5/swirl.jpg" width=400></img>
-            <br/>
-            <img src="a5/flat.jpg" width=400></img>
+            <img src="a5/cutting.jpg" width=400></img>
+            <p>
+                Unfortunately, I didn't realize that I needed to use a lot more double stick tape than I thought.
+            </p>
+            <img src="a5/sad_tape.jpg" width=400></img>
+            <p>
+            	I tried again with loads of tape. Thankfully, the pieces cut a lot better. I ended up with an un-engraved box! 
+            </p>
+            <img src="a5/more_cutting.jpg" width=400></img>
             <br/>
             <img src="a5/final.jpg" width=400></img>
             <h2>Future Work</h2>
