@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Emma's HCDE 598 Digital Fabrication Page!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <div class="title-wrap">
+                <h1>Plantopus</h1>
+            </div>
+        </div>
+        <div class="assignment-content">
+            <h2>Problem Statement</h2>
+            <p>
+                This assignment involved creating a frame for a mold, a silicone mold, and four identical plaster molded objects. The assignment description was:
+            </p>
+            <p>
+                <i>Design and fabricate a mold in silicone. Use the mold to cast at least 4 identical parts (e..g in plaster). Design your master part in CAD first, then design your mold, then design a mold to cast your mold in. So meta! You may fabricate your mold's molds either by CNC milling machinable wax or by 3D printing.</i>
+            </p>
+            <h2>Brainstorming</h2>
+            <p>
+                I knew that this assignment would take a lot of time due to the number of steps involved in creating the final objects. If I tried to make a 3D model on my own, I knew I would have spent too long making something complex or I would have ended up with something simple and uninteresting to me. To avoid either of these outcomes, I found a <a href="https://www.thingiverse.com/thing:27053">cute octopus model on Thingiverse</a>. It's really cute.
+            </p>
+            <img src="a6/thingipus.png" width=400></img>
+            <p>
+                I wanted to tweak the cute octopus a bit so that it could serve a function beyond being adorable. I decided to make it into a mini planter by extruding a hole in the middle of its head (body?). 
+            </p>
+            <h2>The Digital Part</h2>
+            <p>
+                I decided to go back to Rhino for this assignment. I had spent quite a bit of time in it for the lamp assignment and felt comfortable with my ability to create a 3D mold. I imported the octopus STL that I downloaded from Thingiverse. I then made it into a planter by extruding and subtracting a cylinder from its body. It did not look happy about that fact.
+            </p>
+            <img src="a6/img0.png" width=400></img>
+            <br/>
+            <img src="a6/img1.png" width=400></img>
+            <br/>
+            <img src="a6/img2.png" width=400></img>
+            <br/>
+            <img src="a6/img3.png" width=400></img>
+            <p>
+                My loosely formed plan was to put the octopus in a box, take a boolean difference of box and octopus, and cut the final product in half to get two molds. It was difficult for me to visualize many steps of this assignment without physically modeling or sketching the various components. I chose to mess around in Rhino instead of trying to think through each step in detail. It took a while to get the boolean difference to work because the box was hollow and I initially tried to take the difference of two things that were not touching. I modified the octopus to touch the box on the bottom, a wise decision for the final shape of the Oomoo mold.
+            </p>
+            <img src="a6/img4.png" width=400></img>
+            <br/>
+            <img src="a6/img5.png" width=400></img>
+            <p>
+                I cut the combined shape in half to create two molds at the end. After a lot of thought, I tried to cut the mold where it would be easiest to extract the final plaster from the Oomoo. There were a few nooks, crannies, and tentacles to think about. After cutting the shape, I had neglected to think of two things: 1. the halves of the mold needed protrusions so they would not slip while the plaster was setting and 2. I had successfully modeled the molds but not the 3D printed molds for the molds I needed to create. 
+            </p>
+            <img src="a6/img6.png" width=400></img>
+            <br/>
+            <img src="a6/img7.png" width=400></img>
+            <br/>
+            <img src="a6/img8.png" width=400></img>
+            <p>
+                I undid the slice, made the box a solid, and placed two spheres on either side of the octopus. I took the boolean differences of the spheres and octopus with the box and redid the slice. This created the insets I needed to prevent the mold slipping against itself.
+            </p>
+            <img src="a6/img9.png" width=400></img>
+            <br/>
+            <img src="a6/img10.png" width=400></img>
+            <p>
+                I then converted the solid into a hollow shape. I removed the top of the box so that I would have a place to pour in the Oomoo.
+            </p>
+            <img src="a6/img11.png" width=400></img>
+            <p>
+                Once I had my final shape, it was time to 3D print! I exported the files in STL format and loaded them in Slic3r, the software compatible with Prusa 3D printers. Belatedly, I realized I had not extruded the surfaces far enough to make everything thick enough to print. I offset the surfaces in Rhino and re-exported. Everything looked fine when the file was loaded in Slic3r. However, the parts lost a few walls and some of the surfaces were marked as infill instead of solid surfaces when I tried to slice them for printing.
+            </p>
+            <img src="a6/img12.png" width=400></img>
+            <br/>
+            <img src="a6/img13.png" width=400></img>
+            <p>
+                
+            </p>
+            <img src="a6/bottom.png" width=400></img>
+            <p>
+                Link to project files: <a href="a6/Octoplant.3dm">3dm</a> <a href="a6/Octoplant1.stl">STL Part 1</a> <a href="a6/Octoplant2.stl">STL Part 2</a>
+            </p>
+            <h2>The Fabrication Part</h2>
+            <p>
+            	
+            </p>
+            <img src="a6/final.jpg" width=400></img>
+            <h2>Future Work</h2>
+            <p>
+                When researching for this project, I found so many intersting joint designs. I was particularly drawn to joints with contrasting colors of wood and designs involving thicker materials. When not constrained by time or material, I would like to explore more styles of joints. 
+            </p>
+            <img src="a6/more_joints.png" width=400></img>
+        </div>
+    </body>
+</html>
