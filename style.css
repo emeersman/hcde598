@@ -113,6 +113,11 @@ a, p, figcaption {
   margin: 0 auto;
 }
 
+.assignment-content ol {
+  color: #fff;
+  margin-left: 20px;
+}
+
 .assignment-content p {
   padding: 0 40px;
 }
@@ -122,6 +127,19 @@ a, p, figcaption {
   border: 5px solid #B452CD;
   margin: 0 auto;
   width: 400px;
+}
+
+.assignment-content table, th, td {
+  color: #fff;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.assignment-content th, td {
+  padding: 0 5px;
+  word-wrap: break-word;
 }
 
 .assignment-content p a img {
