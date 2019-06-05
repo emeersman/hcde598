@@ -119,7 +119,8 @@ a, p, figcaption {
   margin: 0 auto;
 }
 
-.assignment-content ol {
+.assignment-content ol,
+.assignment-content ul {
   color: #fff;
   margin-left: 20px;
 }
