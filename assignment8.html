@@ -103,37 +103,73 @@
                 Here are the final source files for all parts of this project: <a href="a8/OctoIris.3dm">Head (3dm)</a> <a href="https://cad.onshape.com/documents/bef14864a833d95b9c094aa3/w/096a4de56b87f8db7ac3e1c1/e/f2b40f26327c250f026a3a7a">Body (OnShape)</a>
             </p>
             <h2>The Digital Part</h2>
+            <p>
+                I began the project by building the octopus head in Rhino. I quickly created a sphere and a circle extruded along a curve. I merged the two together and had a basic shape from the head. The base had a radius of 3" because I knew my final project would be approximately that size and I planned to resize later if necessary.
+            </p>
             <img src="a8/img1.png" width=400>
             <br/>
+            <p>
+                My initial plan was to apply a Voronoi pattern to the surface of the head. Unfortunately, a search for a generator online did not yield any results that worked without additional script downloads. I wanted to keep things fairly simple so I thought about trying to apply a more generic geometric pattern to the surface of the head. I played around with a hexagon pattern generated via Grasshopper but I couldn't cleanly trim the pattern from the head.
+            </p>
             <img src="a8/img2.png" width=400>
+            <br/>
+            <p>
+                Rather than spend a dangerously long amount of time on a relatively small part of the project, I decided to cut my losses and move forward with an unpatterned head. I transitioned to OnShape to begin the mechanical iris design. I wanted to create an 8-bladed iris in which the blades would protrude from the ring when open. Before designing anything in digital form, I looked at a lot of examples. Most irises had 5 blades which did not protrude from the sides when opened. After a lot more research and sketching, I started to understand the various components of the iris. I also tried to plan the number of layers I would need for the finished iris. I knew that I would need two layers of wood to stabilize the dowels, a single layer with the dowel rotation track, two layers for the blades (one with the dowel track and one fully intact), and a final layer for the screws on top.
+            </p>
+            <p>
+                Once I had a mental model of the layers and components involved in the iris, I purchased the wood screws which would need to go through 4 layers of 6mm plywood (~1" long). I couldn't find any metal dowel pins at Home Depot so I started designing with the intention of finding a dowel-shaped object later in the process. I also found some 3" diameter puck lights at Home Depot and bought them with the ambitious goal of incorporating light into the final design.
+            </p>
+            <img src="a8/img4.png" width=400>
             <br/>
             <img src="a8/img3.png" width=400>
             <br/>
-            <img src="a8/img4.png" width=400>
-            <br/>
             <img src="a8/img5.png" width=400>
             <br/>
+            <p>
+                I created all of the layers in OnShape, making liberal use of extrusion and rotation. I made holes the size of my wood screws and dowel holes/tracks with 1/4" diameter. The blades of the iris were roughly traced using the curve of the circle as a guideline. Once all of the layers were designed, I put them together in an assembly to ensure that the rotation would work properly and everything would fit together. I was confident about the latter but not sold on the former.
+            </p>
             <img src="a8/img6.png" width=400>
             <br/>
             <img src="a8/img7.png" width=400>
             <br/>
+            <p>
+                Despite a few uncertainties about how all the blades would open and close, I decided to cut out the piece and test a few of the blades. I exported all of the layers as DXFs and arranged them into a single SVG file in Illustrator.
+            </p>
             <img src="a8/img8.png" width=400>
             <br/>
             <h2>The Fabrication Part</h2>
+            <p>
+                Despite my best attempts to correctly scale things in Illustrator, I ended up with an inch->millimeter mismatch somewhere along the way. The first iteration of my laser cut iris (100 power, 10 speed, 6mm plywood) was too small. Luckily, this was an adorable prototyping size and I was able to find some stock parts which helped me prototype the complete assembly. I used some leftover stained wood from a previous project so everything looked very sleek.
+            </p>
             <img src="a8/img9.jpg" width=400>
             <br/>
             <img src="a8/img10.jpg" width=400>
             <br/>
+            <p>
+                I quickly realized that 8 blades with a 3" diameter would not allow me to open the iris as much as I wanted. I did a bit of math and realized that 6 blades yield a much more elegant mechanism. Since the final product would still be a cephalopod, I decided to modify my design.
+            </p>
             <img src="a8/img11.jpg" width=400>
             <br/>
+            <p>
+                Thankfully, most of my OnShape layers were quite easy to change. I had to change the number of times all of the holes and tracks were patterned. I also had to modify the shape of the blades. After these simple adjustments, I had a much improved final product.
+            </p>
             <img src="a8/img11a.png" width=400>
             <br/>
+            <p>
+                I cut the new layers out of the same piece of stained wood, this time at the correct scale.
+            </p>
             <img src="a8/img12.jpg" width=400>
             <br/>
             <img src="a8/img13.jpg" width=400>
             <br/>
+            <p>
+                My screws fit perfectly but I still needed to find some kind of dowel to fit in the track. I purchased a 1/4" craft wooden dowel from Amazon that I could cut into 16mm pieces.
+            </p>
             <img src="a8/img14.jpg" width=400>
             <br/>
+            <p>
+                Meanwhile, I cut the rest of the iris blades and began 3D printing the octopus head. The print took ~6 hours to complete on a Prusa i3 MK3 printer with a 0.020 quality print. At this time, I used wood glue to combine the two bottom layers and each of the two layers on the iris blades. 
+            </p>
             <img src="a8/img15.jpg" width=400>
             <br/>
             <img src="a8/img16.jpg" width=400>
@@ -142,8 +178,14 @@
             <br/>
             <img src="a8/img18.jpg" width=400>
             <br/>
+            <p>
+                The dowels arrived from Amazon and I cut them to size with the help of a saw and clamp. I tried the mechanism and found that it was sticking a lot due to a combination of friction and the angle of the track I had designed. I didn't have time to re-cut the blades with a more aggressively angled track. I tried to reduce the friction problem by using various grains of sandpaper on the sides of the blades, dowel track, dowels, and the surfaces of the layers that needed to rotate against one another.
+            </p>
             <img src="a8/img19.jpg" width=400>
             <br/>
+            <p>
+                The final product was a mechanism that worked fairly smoothly after some help opening a few of the blades. The light fit into the base quite well and all of the blades combined such that no light shone through when they were closed. The head lit up when the iris was open, successfully creating a luminescent octopus.
+            </p>
             <img src="a8/img20.jpg" width=400>
             <br/>
             <img src="a8/final.jpg" width=400>
